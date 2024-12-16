@@ -2,20 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.card {
+  @apply flex;
+  @apply text-justify;
+  @apply text-xl;
+  @apply w-full;
+  @apply my-5;
+  @apply gap-1;
+}
+.card-title {
+  @apply text-5xl;
+  @apply text-center;
+  @apply py-5;
+}
+.card-title-summary {
+  @apply text-justify;
+  @apply p-10;
+  @apply text-2xl;
+}
+.card-img {
+  @apply w-1/2;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply object-contain;
+  @apply bg-white;
+}
+.card-text {
+  @apply w-1/2;
+  @apply p-10;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply text-justify;
+  @apply from-slate-600;
+  @apply to-slate-800;
+  @apply bg-gradient-to-br;
+  @apply text-slate-100;
+}
+.card-text-title {
+  @apply text-center;
+  @apply text-3xl;
+  @apply mb-5;
+}
+.text-list-item {
+  @apply mb-3;
+  @apply font-light;
+  @apply italic;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+.contact-me {
+  @apply bg-slate-100;
+  @apply text-slate-900;
+  @apply w-full;
+
+}
+.contact-me-heading {
+  @apply text-center;
+  @apply text-3xl;
+  @apply p-4;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.contact-me-office {
+  @apply pb-10;
+}
+.contact-me-office p:nth-child(1){
+  @apply text-2xl;
+  @apply underline;
+  @apply pl-5;
+}
+.contact-me-office p:nth-child(n+2) {
+  @apply pl-6;
+}
+
+.header {
+  background-image: url("/background.jpg");
+  background-size: contain;
+  
 }

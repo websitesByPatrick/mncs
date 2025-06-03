@@ -4,14 +4,14 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center w-full h-44 bg-yellow-900 text-white">
+    <div className="flex justify-between items-center w-full h-44 bg-slate-700 text-white">
       <div className="flex w-5/12 justify-center items-center">
         <Image
           src="/marica.jpg"
           alt="Logo"
           width={150}
           height={150}
-          className="object-cover rounded-full shadow-yellow-500 shadow-2xl"
+          className="object-cover rounded-full shadow-slate-400 shadow-2xl"
         />
 
         <div className="flex flex-col justify-center items-center pl-5">
